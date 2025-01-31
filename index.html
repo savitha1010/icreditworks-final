@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCreditSYNC Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+
+        
+        <div class="left-section">
+            <div class="logo">
+                <h2><span style="color: #E57E25;">i</span><span style=color:black>Credit</span> <span  style="color: silver">SYNC</span></h2>
+                <p class="subtitle"><span class="highlight">P</span>rovide <span class="highlight">P</span>ortal <span style=background-color:#E57E25;color:white class="version"><strong>3.0</strong></span></p>
+            </div>
+
+            <div class="login-container">
+                <div class="login-box">
+                    <h2 class="user-login-title">USER LOGIN</h2>
+
+                    <form action="#" method="POST">
+                        <input type="email" id="email" name="email" placeholder="Business Email ID" required>
+
+                     
+                        <div class="password-container">
+                            <input type="password" id="password" name="password" placeholder="Password" required>
+                            <span class="toggle-password" onclick="togglePassword()">
+                                <i class="fa-solid fa-eye-slash"></i>
+                            </span>
+                        </div>
+
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <BR>
+
+                        <div class="options">
+                            <href href="#">Don't remember your password?</href>
+                        </div>
+                        <BR><BR>
+
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+
+                
+                <div class="security-message">
+                    <i class="fa-solid fa-lock"></i> Your security is our priority
+                </div>
+            </div>
+        </div>
+
+   
+        <div class="info-text">
+            <h2>The smartest way for your patients to pay for their smiles.</h2>
+            <p>Introducing a remarkable set of new features that simplify and accelerate everyday tasks 
+               performed in the portal. Providers have even greater visibility and control over flexible 
+               financing offered through the iCreditWorks native mobile App!</p>
+        </div>
+
+        
+        <div class="info-section">
+            <img src="./image 3 .png" alt="Dashboard Preview">
+        </div>
+    </div>
+
+    <button class="student-button">
+        <img src="./STUDENT ICON.jpg" alt="Student Icon">
+    </button>
+
+
+    <script>
+        function togglePassword() {
+            var passwordField = document.getElementById("password");
+            var toggleIcon = document.querySelector(".toggle-password i");
+
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                toggleIcon.classList.remove("fa-eye-slash");
+                toggleIcon.classList.add("fa-eye");
+            } else {
+                passwordField.type = "password";
+                toggleIcon.classList.remove("fa-eye");
+                toggleIcon.classList.add("fa-eye-slash");
+            }
+        }
+    </script>
+</body>
+</html>
